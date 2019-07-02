@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 
     <meta charset="UTF-8">
@@ -7,32 +8,90 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
 
-    <script
-    src="https://code.jquery.com/jquery-3.4.1.min.js"
-    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-    crossorigin="anonymous">
-    </script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous">
+        </script>
 
     <link rel="stylesheet" href="assets/css/style.css">
     <script src="assets/javascript/app.js"></script>
-    
+
 
 </head>
+
 <body>
-    <h1>Hello World</h1>
-    <form>
-        <fieldset>
-            <legend>Question1</legend>
+    <h1>Sarah's Totally Trivial Trivia</h1>
+    <h2>Let's play!</h2>
+    <form id="quiz">
+        <fieldset form="quiz">
+            <legend>What's my favorite color</legend>
 
-            <input type="radio" id="answer1" name="answer">
-            <label for="answer1">answer</label><br/>
+            <input type="radio" id="questionOneAnswer1" name="questionOneAnswer" value=true>
+            <label for="questionOneAnswer1">Black</label><br />
 
-            <input type="radio" id="answer2" name="answer">
-            <label for="answer2">answer</label><br/>
+            <input type="radio" id="questionOneAnswer2" name="questionOneAnswer" value=false>
+            <label for="questionOneAnswer2">Green</label><br />
 
-            <input type="radio" id="answer3" name="answer">
-            <label for="answer3">answer</label>
+            <input type="radio" id="questionOneAnswer3" name="questionOneAnswer" value=false>
+            <label for="questionOneAnswer3">Blue</label>
         </fieldset>
+
+        <fieldset form="quiz">
+            <legend>What's my favorite food</legend>
+
+            <input type="radio" id="questionTwoAnswer1" name="questionTwoAnswer" value=false>
+            <label for="questionTwoAnswer1">Sushi</label><br />
+
+            <input type="radio" id="questionTwoAnswer2" name="questionTwoAnswer" value=true>
+            <label for="questionTwoAnswer2">Pho</label><br />
+
+            <input type="radio" id="questionTwoAnswer3" name="questionTwoAnswer" value=false>
+            <label for="questionTwoAnswer3">Pizza</label>
+        </fieldset>
+
+        <fieldset form="quiz">
+            <legend>What's my favorite plant</legend>
+
+            <input type="radio" id="questionThreeAnswer1" name="questionThreeAnswer" value=false>
+            <label for="questionTwoAnswer1">String of Hearts</label><br />
+
+            <input type="radio" id="questionThreeAnswer2" name="questionThreeAnswer" value=fasle>
+            <label for="questionTwoAnswer2">Snake Plant</label><br />
+
+            <input type="radio" id="questionThreeAnswer3" name="questionThreeAnswer" value=true>
+            <label for="questionTwoAnswer3">Cactus</label>
+        </fieldset>
+
+        <fieldset form="quiz">
+            <legend>What's my favorite movie</legend>
+
+            <input type="radio" id="questionFourAnswer1" name="questionFourAnswer" value=false>
+            <label for="questionTwoAnswer1">Event Horizon</label><br />
+
+            <input type="radio" id="questionFourAnswer2" name="questionFourAnswer" value=true>
+            <label for="questionTwoAnswer2">So I Married an Ax Murderer</label><br />
+
+            <input type="radio" id="questionFourAnswer3" name="questionFourAnswer" value=true>
+            <label for="questionTwoAnswer3">Forrest Gump</label>
+        </fieldset>
+
+        <fieldset form="quiz">
+            <legend>What's my favorite band</legend>
+
+            <input type="radio" id="questionFiveAnswer1" name="questionFiveAnswer" value=false>
+            <label for="questionTwoAnswer1">Abba</label><br />
+
+            <input type="radio" id="questionFiveAnswer2" name="questionFiveAnswer" value=false>
+            <label for="questionTwoAnswer2">Nirvana</label><br />
+
+            <input type="radio" id="questionFiveAnswer3" name="questionFiveAnswer" value=true>
+            <label for="questionTwoAnswer3">Alice in Chains</label>
+        </fieldset>
+
+
+        <button type="submit" id="formButton">
+            Click Me
+        </button>
     </form>
 </body>
+
 </html>
